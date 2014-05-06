@@ -20,10 +20,9 @@
     [self.window makeKeyAndVisible];
     
     
-    NSLog(@"==> %@", [[JFEMnemo sharedManager] fromInteger:125704]);
-    NSLog(@"==> %ld", [[JFEMnemo sharedManager] toInteger:@"karasu"]);
-    
-    NSLog(@"==> %@", [[JFEMnemo sharedManager] fromInteger:-173866]);
+    NSLog(@"%d ==> %@", 125704, [[JFEMnemo sharedManager] fromInteger:125704]);
+    NSLog(@"%@ ==> %ld", @"karasu", [[JFEMnemo sharedManager] toInteger:@"karasu"]);
+    NSLog(@"%d ==> %@", -173866, [[JFEMnemo sharedManager] fromInteger:-173866]);
     
     return YES;
 }

@@ -105,7 +105,7 @@
         return @"";
     }
    
-    int mod = [self fmodOf:integer with:_syllables.count];
+    long mod = [self fmodOf:integer with:_syllables.count];
     int rest = floor(integer / _syllables.count);
     
     return [NSString stringWithFormat:@"%@%@", [self fromIntegerInner:rest], [_syllables objectAtIndex:mod]];
@@ -116,8 +116,8 @@
 {
     BOOL isAMnemoWord = YES;
     @try {
-        int r = [self toInteger:word];
-        NSLog(@"%d", r);
+        long r = [self toInteger:word];
+        NSLog(@"%ld", r);
     }
     @catch (NSException *exception) {
         isAMnemoWord = false;
@@ -183,9 +183,9 @@
 }
 - (long) toNumber:(NSString*) syllable
 {
-    int index = [_syllables indexOfObject:syllable];
+    long index = [_syllables indexOfObject:syllable];
     
-    if (index == NSNotFound) {
+    if ([_syllables indexOfObject:syllable] == NSNotFound) {
         [NSException raise:@"Invalid foo value" format:@"The syllable %@ was not found", syllable];
         return false;
     } else {
