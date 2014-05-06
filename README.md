@@ -16,7 +16,9 @@ Simply import file
 Then call
 
 ```objc
-NSString * mnemo = [[JFEMnemo sharedManager] fromInteger:2455];
+// 76955 will return haruka
+NSString * mnemo = [[JFEMnemo sharedManager] fromInteger:76955];
+
 long result = [[JFEMnemo sharedManager] toInteger:mnemo];
 ```
 
