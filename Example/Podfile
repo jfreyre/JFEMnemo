@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'JFEMnemo', :exclusive => true do
+  pod "JFEMnemo", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "JFEMnemo", :path => "../"
+
+  
+end

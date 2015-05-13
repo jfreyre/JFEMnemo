@@ -1,19 +1,20 @@
 //
-//  MnemoTests.m
-//  MnemoTests
+//  JFEMnemoTests.m
+//  JFEMnemoTests
 //
-//  Created by Jérome Freyre on 17.03.14.
-//  Copyright (c) 2014 Jérome Freyre. All rights reserved.
+//  Created by Jerome Freyre on 05/13/2015.
+//  Copyright (c) 2014 Jerome Freyre. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import "JFEMnemo.h"
 
-@interface MnemoTests : XCTestCase
+@interface Tests : XCTestCase
 
 @end
 
-@implementation MnemoTests
+@implementation Tests
+
 
 - (void)setUp
 {
@@ -27,10 +28,23 @@
     [super tearDown];
 }
 
+- (void) testingFirstMillionEquality {
+    JFEMnemo * tool = [JFEMnemo sharedManager];
+    
+    for (int i = 1; i <= 1000000; i++) {
+        
+        NSString * word = [tool fromInteger:i];
+        long result = [tool toInteger:word];
+        
+        XCTAssertTrue((result == i), @"test %d | %@ is not correctly converted to %d", i, word, result);
+        
+    }
+}
+
 - (void)testFromInteger
 {
     
-     JFEMnemo * tool = [JFEMnemo sharedManager];
+    JFEMnemo * tool = [JFEMnemo sharedManager];
     
     
     XCTAssertTrue([@"nada" isEqualToString:[tool fromInteger:2455]], @"nada is not equal to %@", [tool fromInteger:2455]);
@@ -41,7 +55,7 @@
     XCTAssertTrue([@"takeshimaya" isEqualToString:[tool fromInteger:1329724967]], @"takeshimaya is not equal to %@", [tool fromInteger:1329724967]);
     XCTAssertTrue([@"winamote" isEqualToString:[tool fromInteger:-173866]], @"winamote is not equal to %@", [tool fromInteger:-173866]);
     XCTAssertTrue([@"wina" isEqualToString:[tool fromInteger:-35]], @"wina is not equal to %@", [tool fromInteger:-35]);
-
+    
 }
 
 
@@ -67,7 +81,7 @@
 
 - (void) testSplit
 {
-     JFEMnemo * tool = [JFEMnemo sharedManager];
+    JFEMnemo * tool = [JFEMnemo sharedManager];
     
     NSArray * result = @[@"tsu", @"na", @"shi", @"ma"];
     NSArray * split = [tool split:@"tsunashima"];

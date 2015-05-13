@@ -27,13 +27,16 @@
 
 @implementation JFEMnemo
 
+static JFEMnemo *sharedInstance;
+
 + (id)sharedManager {
-    static JFEMnemo *sharedMyManager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedMyManager = [[self alloc] init];
+    static dispatch_once_t _singletonPredicate;
+    
+    dispatch_once(&_singletonPredicate, ^{
+        sharedInstance = [[super allocWithZone:nil] init];
     });
-    return sharedMyManager;
+    
+    return sharedInstance;
 }
 
 -(id)init

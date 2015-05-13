@@ -1,9 +1,9 @@
 //
 //  main.m
-//  Mnemo
+//  JFEMnemo
 //
-//  Created by Jérome Freyre on 17.03.14.
-//  Copyright (c) 2014 Jérome Freyre. All rights reserved.
+//  Created by Jerome Freyre on 05/13/2015.
+//  Copyright (c) 2014 Jerome Freyre. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

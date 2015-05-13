@@ -1,32 +1,28 @@
 //
 //  JFEAppDelegate.m
-//  Mnemo
+//  JFEMnemo
 //
-//  Created by Jérome Freyre on 17.03.14.
-//  Copyright (c) 2014 Jérome Freyre. All rights reserved.
+//  Created by CocoaPods on 05/13/2015.
+//  Copyright (c) 2014 Jerome Freyre. All rights reserved.
 //
 
 #import "JFEAppDelegate.h"
-
-#import "JFEmnemo.h"
+#import "JFEMnemo.h"
 
 @implementation JFEAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
     
     
     NSLog(@"%d ==> %@", 125704, [[JFEMnemo sharedManager] fromInteger:125704]);
     NSLog(@"%@ ==> %ld", @"karasu", [[JFEMnemo sharedManager] toInteger:@"karasu"]);
     NSLog(@"%d ==> %@", -173866, [[JFEMnemo sharedManager] fromInteger:-173866]);
     
+    // Override point for customization after application launch.
     return YES;
 }
-
+							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
