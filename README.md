@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/JFEMnemo.svg?style=flat)](http://cocoapods.org/pods/JFEMnemo)
 [![Platform](https://img.shields.io/cocoapods/p/JFEMnemo.svg?style=flat)](http://cocoapods.org/pods/JFEMnemo)
 
-JFEMnemo is an iOS version of the ruby gem rufus-mnemo. It turns integers into japanese sounding words and vice versa (ruby).
+JFEMnemo is an iOS version of the [ruby gem rufus-mnemo](https://github.com/jmettraux/rufus-mnemo). It turns integers into japanese sounding words and vice versa (ruby).
 
 ## Usage
 
