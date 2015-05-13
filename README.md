@@ -1,6 +1,6 @@
 # JFEMnemo
 
-[![CI Status](http://img.shields.io/travis/Jerome Freyre/JFEMnemo.svg?style=flat)](https://travis-ci.org/Jerome Freyre/JFEMnemo)
+[![CI Status](http://img.shields.io/travis/jfreyre/JFEMnemo.svg?style=flat)](https://travis-ci.org/jfreyre/JFEMnemo)
 [![Version](https://img.shields.io/cocoapods/v/JFEMnemo.svg?style=flat)](http://cocoapods.org/pods/JFEMnemo)
 [![License](https://img.shields.io/cocoapods/l/JFEMnemo.svg?style=flat)](http://cocoapods.org/pods/JFEMnemo)
 [![Platform](https://img.shields.io/cocoapods/p/JFEMnemo.svg?style=flat)](http://cocoapods.org/pods/JFEMnemo)
