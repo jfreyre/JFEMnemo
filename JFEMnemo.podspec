@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JFEMnemo"
-  s.version          = "0.1.0"
+  s.version          = "0.1.2"
   s.summary          = "JFEMnemo is an iOS version of the ruby gem rufus-mnemo."
   s.description      = <<-DESC
                          With JFEMnemo you can easily turns integers into japanese sounding words and vice versa (ruby).

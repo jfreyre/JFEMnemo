@@ -1,5 +1,5 @@
 PODS:
-  - JFEMnemo (0.1.0)
+  - JFEMnemo (0.1.2)
 
 DEPENDENCIES:
   - JFEMnemo (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  JFEMnemo: 6055ededac6bad34a912b7c6e07a1bb1d1de086a
+  JFEMnemo: 13141435ccb0cfb1439e49ec4af78a644d01fb9b
 
 COCOAPODS: 0.36.4
